@@ -9,7 +9,7 @@ const PartnerWithUs = () => {
         <Container>
           <Row className="justify-content-center text-center">
             <Col md={10}>
-             
+            
               <h1 className="section-heading mb-4" style={{ fontSize: '3rem' }}>
                 Partner with VASUDHEVA Media
               </h1>
