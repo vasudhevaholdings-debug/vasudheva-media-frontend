@@ -1,0 +1,81 @@
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #333;
+}
+
+.premium-section {
+  padding: 50px 0;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.calm-card {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.calm-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #4f73d0, #ff6b9d);
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.header-nav .nav-link {
+  font-weight: 500;
+  color: #16e8e1;
+  transition: color 0.3s ease;
+}
+
+.header-nav .nav-link:hover {
+  color: #ff6b9d;
+}
+.start-btn .cta-button {
+  background: linear-gradient(135deg, #4f73d0, #ff6b9d);
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.start-btn .cta-button:hover {
+  background: linear-gradient(135deg, #ff6b9d, #4f73d0);
+  color: aqua;
+}
+.navbar{
+  padding: 20px;
+}
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* MAIN BRAND NAME */
+.brand-name {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #111; /* deep black */
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+/* SUB TEXT */
+.brand-entity {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #555;
+  text-transform: uppercase;
+}
