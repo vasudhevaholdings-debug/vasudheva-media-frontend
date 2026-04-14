@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section 
       className="premium-section text-center py-5"
       style={{ 
-        minHeight: '65vh',
+        
         display: 'flex',
         alignItems: 'center',
         color: 'white',
