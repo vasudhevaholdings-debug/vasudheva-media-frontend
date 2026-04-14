@@ -14,7 +14,6 @@ const IdentityGrid = () => {
   return (
     <section className="premium-section  py-5" style={{ 
         background: 'linear-gradient(135deg, #44493a 0%, #9b5a8c 40%, #60A5FA 70%, #E0F2FE 100%)',
-        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         color: 'white',
