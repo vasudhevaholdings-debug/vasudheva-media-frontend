@@ -1,11 +1,15 @@
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Georgia', serif;
   color: #333;
 }
-
-.premium-section {
-  padding: 50px 0;
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+/* .premium-section {
+  padding: 50px 0;
+} */
 
 .section-heading {
   font-family: 'Playfair Display', serif;
@@ -31,51 +35,243 @@ body {
   padding: 14px 36px;
   border-radius: 50px;
   font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
-.header-nav .nav-link {
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff6b9d, #4f73d0);
+ 
+}
+
+/* body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #333;
+} */
+
+
+
+/* ====================== Header.css - Vasudheva Media (Final Updated Version) ====================== */
+
+.header {
+  background-color: #313938;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 14px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==================== FULL WIDTH ON MOBILE ==================== */
+@media (max-width: 991px) {
+  .header {
+    padding: 35px 15px;        
+  }
+}
+
+/* Left Side - Logo + Brand */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  height: 75px;
+  width: 80px;
+  
+}
+
+.brand-block {
+  line-height: 1.2;
+}
+
+/* Brand Name & Entity */
+.brand-name {
+  color: #efc324;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.brand-entity {
+  color: #e2e5d2;
+  font-size: 0.85rem;
   font-weight: 500;
-  color: #16e8e1;
+  letter-spacing: 2px;
+  opacity: 0.95;
+}
+
+/* Bigger fonts on Mobile */
+@media (max-width: 991px) {
+  .brand-name {
+    font-size: 45px;
+  }
+  .brand-entity {
+    font-size: 25px;
+  }
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* Center Nav Links */
+.header-center-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
   transition: color 0.3s ease;
 }
 
-.header-nav .nav-link:hover {
-  color: #ff6b9d;
+.header-center-nav a:hover {
+  color: #efc324;
 }
-.start-btn .cta-button {
-  background: linear-gradient(135deg, #4f73d0, #ff6b9d);
-  border: none;
-  padding: 14px 36px;
+
+/* Right Nav - CTA Button (Only on Desktop) */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hide CTA button on mobile (so it appears only in hamburger) */
+@media (max-width: 991px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+.cta-button {
+  background-color: #6b4eff;
+  color: white;
+  padding: 12px 32px;
   border-radius: 50px;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
-.start-btn .cta-button:hover {
-  background: linear-gradient(135deg, #ff6b9d, #4f73d0);
-  color: aqua;
+
+.cta-button:hover {
+  background-color: #5a3dd4;
+  transform: translateY(-2px);
 }
-.navbar{
-  padding: 20px;
+
+/* Hamburger Button (White) */
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px;
 }
-.brand-block {
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ====================== MOBILE MENU ====================== */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #313938;
+  padding: 25px 5%;
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  gap: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
-/* MAIN BRAND NAME */
-.brand-name {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #111; /* deep black */
-  text-transform: uppercase;
-  margin-bottom: 2px;
-}
-
-/* SUB TEXT */
-.brand-entity {
-  font-size: 18px;
-  font-weight: 500;
+.mobile-menu a,
+.mobile-menu button {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;           
   letter-spacing: 2px;
-  color: #555;
+  font-weight: 500;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu .cta-button {
+  width: 30%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 18px;
+  font-size: 25px;
+}
+
+.mobile-menu a:hover {
+  color: #efc324;
+  padding-left: 10px;
+}
+.hero-tagline {
+  font-size: 1.15rem;
+  letter-spacing: 3px;
+  color: #BAE6FD;
+  font-weight: 600;
   text-transform: uppercase;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: #E0F2FE;
+}
+
+.hero-tertiary {
+  font-size: 1.05rem;
+  letter-spacing: 8px;
+  color: #BAE6FD;
+  opacity: 0.95;
+  text-transform: uppercase;
+}
+
+/* ====================== MOBILE ONLY - INCREASE p SIZE ====================== */
+@media (max-width: 767px) {
+  .hero-tagline {
+    font-size: 1.45rem;     /* Bigger tagline */
+  }
+  
+  .hero-description {
+    font-size: 2.55rem;     
+    line-height: 1.65;
+    letter-spacing: 2px;
+  }
+  
+  .hero-tertiary {
+    font-size: 1.25rem;     /* Tertiary line */
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .hero-description {
+    font-size: 1.45rem;
+  }
 }

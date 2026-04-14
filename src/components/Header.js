@@ -1,62 +1,76 @@
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../logos/mediaLogo_transparent.png";
+import { HiMenu, HiX } from "react-icons/hi";
 
-const Header = () => {
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <Navbar  expand="lg" sticky="top" className="shadow-sm navbar"style={{ backgroundColor: '#313938' }}>
-      <Container fluid className="d-flex align-items-center justify-content-between">
+    <header className="header">
 
-        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center header-left">
-          {/* Logo */}
+      {/* Left - Logo + Brand */}
+      <div className="header-left">
+        <Link to="/">
           <img
             src={Logo}
             alt="Vasudheva Logo"
-            className="header-logo me-2"
-            height="60"
-            width="60"
+            className="header-logo"
           />
+        </Link>
 
-          {/* Brand Text Block */}
-          <div className="brand-block">
-            <div className="brand-name"style={{ color: '#efc324' }}>VASUDHEVA</div>
-            <div className="brand-entity"style={{ color: '#e2e5d2e3' }}>MEDIA PVT. LTD.</div>
-          </div>
-        </Navbar.Brand>
+        <div className="brand-block">
+          <div className="brand-name">VASUDHEVA</div>
+          <div className="brand-entity">MEDIA PVT. LTD.</div>
+        </div>
+      </div>
 
-        {/* TOGGLE (mobile) */}
-        <Navbar.Toggle />
+      {/* Center Navigation - Desktop only */}
+      <nav className="header-center-nav desktop-nav">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/what-we-do">What We Do</Link>
+        <Link to="/work">Work</Link>
+        <Link to="/insights">Insights</Link>
+        <Link to="/who-we-serve">Who We Serve</Link>
+        <Link to="/collaborate">Collaborate</Link>
+      </nav>
 
-        {/* CENTER + RIGHT */}
-        <Navbar.Collapse className="justify-content-between">
+      {/* Right Side - CTA Button */}
+      <nav className="header-nav desktop-nav">
+        <Link to="/contact" className="cta-button">
+          Start a Project
+        </Link>
+      </nav>
 
-          {/* CENTER: Nav links */}
-          <Nav className="mx-auto text-center header-nav">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>   
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/what-we-do">What We Do</Nav.Link>
-            <Nav.Link as={Link} to="/work">Work</Nav.Link>
-            <Nav.Link as={Link} to="/insights">Insights</Nav.Link>
-            <Nav.Link as={Link} to="/who-we-serve">Who We Serve</Nav.Link>
-            <Nav.Link as={Link} to="/collaborate">Collaborate</Nav.Link>
-          </Nav>
+      {/* Hamburger Button */}
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <HiX /> : <HiMenu />}
+      </button>
 
-          {/* RIGHT: CTA */}
-          <div className="d-flex justify-content-end start-btn">
-            <Button 
-              variant="primary" 
-              className="cta-button"
-              as={Link}
-              to="/contact"
-            >
-              Start a Project
-            </Button>
-          </div>
-
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="mobile-menu">
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/what-we-do" onClick={() => setMenuOpen(false)}>What We Do</Link>
+          <Link to="/work" onClick={() => setMenuOpen(false)}>Work</Link>
+          <Link to="/insights" onClick={() => setMenuOpen(false)}>Insights</Link>
+          <Link to="/who-we-serve" onClick={() => setMenuOpen(false)}>Who We Serve</Link>
+          <Link to="/collaborate" onClick={() => setMenuOpen(false)}>Collaborate</Link>
+          
+          <Link 
+            to="/contact" 
+            className="cta-button mobile-cta"
+            onClick={() => setMenuOpen(false)}
+          >
+            Start a Project
+          </Link>
+        </div>
+      )}
+    </header>
   );
-};
-
-export default Header;
+}

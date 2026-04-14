@@ -36,10 +36,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        {/* ←←← ROOT PATH (Home page starting pe yahi show hoga) */}
+      
         <Route path="/" element={<Home />} />
         
-        <Route path="/home" element={<Home />} />   {/* optional backup */}
+        <Route path="/home" element={<Home />} />   
         <Route path="/about" element={<About />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/work" element={<Work />} />

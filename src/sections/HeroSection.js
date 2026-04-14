@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section 
       className="premium-section text-center py-5"
       style={{ 
-        minHeight: '100vh',
+        minHeight: '65vh',
         display: 'flex',
         alignItems: 'center',
         color: 'white',
@@ -61,25 +61,26 @@ const HeroSection = () => {
       {/* Main Content */}
       <Container style={{ position: 'relative', zIndex: 4 }}>
         <Row className="justify-content-center">
-          <Col md={10} lg={9}>
+          <Col >
 
-            <p className="text-uppercase mb-3" style={{ 
+            <p className="text-uppercase mb-3 description hero-tagline" style={{ 
               letterSpacing: '3px', 
               color: '#BAE6FD', 
-              fontWeight: '600' 
+              fontWeight: '600' ,
+              fontSize: '1.1rem'
             }}>
               Nurturing the Next…
             </p>
             
             <h1 className="section-heading mb-4" style={{ fontSize: '2.8rem', lineHeight: '1.2' }}>
-              Research-backed media, communication and cultural storytelling<br />
+              Research-backed media, communication and cultural storytelling
               for institutions, ideas and society.
             </h1>
 
-            <p className="lead mb-5 mx-auto" style={{ 
-              maxWidth: '900px',
+            <p className="lead mb-5 mx-auto hero-description" style={{ 
+              
               color: '#E0F2FE',
-              fontSize: '1.2rem'
+              
             }}>
               VASUDHEVA Media is a multidisciplinary media and communication
               institution that works at the intersection of media production, strategic
@@ -91,7 +92,7 @@ const HeroSection = () => {
             </p>
 
             <p 
-              className="fw-light text-uppercase mb-5 mx-auto" 
+              className="fw-light text-uppercase mb-5 mx-auto hero-tertiary" 
               style={{ 
                 letterSpacing: '8px', 
                 fontSize: '1.05rem',
