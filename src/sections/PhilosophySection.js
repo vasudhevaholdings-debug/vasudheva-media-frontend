@@ -3,8 +3,16 @@ import { Link } from 'react-router-dom';
 
 const PhilosophySection = () => {
   return (
-    <section className="premium-section py-5">
-      <Container fluid className="px-4 px-lg-5">
+    <section className="premium-section py-5 position-relative overflow-hidden" style={{ backgroundColor: '#f1f1a6' }}>
+
+      {/* Watermark Image */}
+      <img
+        src="/images/vasudheva-watermark.png"   // ← Change this to your image path
+        alt="Watermark"
+        className="watermark"
+      />
+
+      <Container fluid className="px-4 px-lg-5 position-relative">
 
         {/* Section Heading */}
         <h2 className="section-heading text-center mb-2">
@@ -18,6 +26,7 @@ const PhilosophySection = () => {
         <Row className="justify-content-center">
           <Col lg={10} xl={8}>
 
+            {/* Your existing content remains the same */}
             <p className="lead text-center mx-auto mb-4" style={{ maxWidth: '820px' }}>
               VASUDHEVA Media is built on the belief that meaningful communication
               is not merely produced — it is cultivated.
@@ -27,7 +36,7 @@ const PhilosophySection = () => {
               To “Nurture the Next” means to consciously participate in the creation of:
             </p>
 
-            <Row className="justify-content-center mb-5">
+            <Row className="justify-content-center mb-2">
               <Col md={10} lg={8}>
                 <ul 
                   className="list-unstyled" 
@@ -37,15 +46,15 @@ const PhilosophySection = () => {
                     paddingLeft: '20px'
                   }}
                 >
-                  <li className="mb-3">• the next generation of ideas and narratives,</li>
-                  <li className="mb-3">• the next generation of institutions and leaders,</li>
-                  <li className="mb-3">• the next generation of media formats and communication systems,</li>
-                  <li className="mb-3">• and the next generation of cultural and intellectual possibilities.</li>
+                  <li className="mb-3">• The next generation of ideas and narratives,</li>
+                  <li className="mb-3">• The next generation of institutions and leaders,</li>
+                  <li className="mb-3">• The next generation of media formats and communication systems,</li>
+                  <li className="mb-3">• And the next generation of cultural and intellectual possibilities.</li>
                 </ul>
               </Col>
             </Row>
 
-            <p className="lead text-center mx-auto mb-5" style={{ maxWidth: '820px' }}>
+            <p className="lead text-center mx-auto mb-2" style={{ maxWidth: '820px' }}>
               It reflects a commitment to:<br />
               depth over noise, clarity over confusion, meaning over visibility,<br />
               and responsibility over virality.

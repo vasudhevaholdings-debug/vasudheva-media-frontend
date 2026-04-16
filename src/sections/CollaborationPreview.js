@@ -1,13 +1,40 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
 const CollaborationPreview = () => {
-  // Beautiful accent colors for the 4 cards
   const cardStyles = [
     { accent: '#3B82F6', title: '#1E40AF' },   // Blue
     { accent: '#8B5CF6', title: '#4C1D95' },   // Purple
     { accent: '#EC4899', title: '#831843' },   // Pink
     { accent: '#14B8A6', title: '#115E59' },   // Teal
+  ];
+
+  // Pastel background colors for each card
+  const cardBgColors = [
+    '#bfe5e9',   // Light Blue
+    '#e2c1e7',   // Light Purple
+    '#f9c0c0',   // Light Pink
+    '#c0e9c0'    // Light Teal
+  ];
+
+  const pathways = [
+    {
+      title: "Partner With Us",
+      desc: "Collaborate on institutional, strategic or long-term initiatives."
+    },
+    {
+      title: "Work With Us",
+      desc: "Join as part of the core team or extended network."
+    },
+    {
+      title: "Freelancers and Collaborators",
+      desc: "Work on projects across media, research and communication."
+    },
+    {
+      title: "Research and Media Collaborations",
+      desc: "Build joint intellectual and media initiatives."
+    }
   ];
 
   return (
@@ -27,65 +54,27 @@ const CollaborationPreview = () => {
 
         {/* Pathways - 4 Cards Grid */}
         <Row className="g-4">
-          {/* Card 1 */}
-          <Col md={6} lg={3}>
-            <Card className="h-100 border-0 shadow-sm overflow-hidden">
-              <div style={{ height: '6px', background: cardStyles[0].accent }}></div>
-              <Card.Body className="pt-4">
-                <h5 className="mb-3" style={{ color: cardStyles[0].title }}>
-                  Partner With Us
-                </h5>
-                <p className="small">
-                  Collaborate on institutional, strategic or long-term initiatives.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          {/* Card 2 */}
-          <Col md={6} lg={3}>
-            <Card className="h-100 border-0 shadow-sm overflow-hidden">
-              <div style={{ height: '6px', background: cardStyles[1].accent }}></div>
-              <Card.Body className="pt-4">
-                <h5 className="mb-3" style={{ color: cardStyles[1].title }}>
-                  Work With Us
-                </h5>
-                <p className="small">
-                  Join as part of the core team or extended network.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          {/* Card 3 */}
-          <Col md={6} lg={3}>
-            <Card className="h-100 border-0 shadow-sm overflow-hidden">
-              <div style={{ height: '6px', background: cardStyles[2].accent }}></div>
-              <Card.Body className="pt-4">
-                <h5 className="mb-3" style={{ color: cardStyles[2].title }}>
-                  Freelancers and Collaborators
-                </h5>
-                <p className="small">
-                  Work on projects across media, research and communication.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          {/* Card 4 */}
-          <Col md={6} lg={3}>
-            <Card className="h-100 border-0 shadow-sm overflow-hidden">
-              <div style={{ height: '6px', background: cardStyles[3].accent }}></div>
-              <Card.Body className="pt-4">
-                <h5 className="mb-3" style={{ color: cardStyles[3].title }}>
-                  Research and Media Collaborations
-                </h5>
-                <p className="small">
-                  Build joint intellectual and media initiatives.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
+          {pathways.map((item, index) => (
+            <Col md={6} lg={3} key={index}>
+              <Card 
+                className="identity-card h-100 border-0 shadow-sm"
+                style={{ 
+                  overflow: 'hidden',
+                  backgroundColor: cardBgColors[index]
+                }}
+              >
+                {/* Colored Top Bar */}
+                <div style={{ height: '6px', background: cardStyles[index].accent }}></div>
+                
+                <Card.Body className="pt-4">
+                  <h5 className="mb-3" style={{ color: cardStyles[index].title }}>
+                    {item.title}
+                  </h5>
+                  <p className="small">{item.desc}</p>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
 
         {/* CTA */}

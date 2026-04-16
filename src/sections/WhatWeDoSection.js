@@ -1,6 +1,7 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
 const WhatWeDoSection = () => {
   const cardStyles = [
     { accent: '#3B82F6', title: '#1E40AF' },
@@ -15,7 +16,7 @@ const WhatWeDoSection = () => {
 
   return (
     <section className="premium-section py-5">
-      <Container fluid className="px-4 px-lg-5">   {/* ← Changed to fluid + better padding */}
+      <Container fluid className="px-4 px-lg-5">
         
         {/* Section Heading */}
         <h2 className="section-heading text-center mb-4">
@@ -28,7 +29,7 @@ const WhatWeDoSection = () => {
           services, but as an integrated system of capabilities.
         </p>
 
-        {/* Cards Grid - Now Wider */}
+        {/* Cards Grid */}
         <Row className="g-4">
           {[
             { title: "Media Production", desc: "Films, visual storytelling and media formats designed with narrative depth and purpose." },
@@ -40,9 +41,17 @@ const WhatWeDoSection = () => {
             { title: "Digital Platforms and Audience Systems", desc: "Design of platforms, content ecosystems and audience engagement frameworks." },
             { title: "Training, Labs and Talent Development", desc: "Workshops, labs and learning ecosystems for developing communication and media capability." },
           ].map((item, index) => (
-            <Col md={6} lg={3} key={index}>   {/* Changed lg={4} to lg={3} for better spread */}
-              <Card className="h-100 border-0 shadow-sm" style={{ overflow: 'hidden' }}>
+            <Col md={6} lg={3} key={index}>
+              <Card 
+                className="identity-card h-100 border-0 shadow-sm"
+                style={{ 
+                  overflow: 'hidden',
+                  backgroundColor: ['#bfe5e9', '#e2c1e7', '#f9c0c0', '#c0e9c0', '#f9e2c0', '#c0d9f9', '#d1d1f9', '#f9d1e2'][index]
+                }}
+              >
+                {/* Colored Top Bar */}
                 <div style={{ height: '6px', background: cardStyles[index].accent }}></div>
+                
                 <Card.Body className="pt-4">
                   <h5 className="mb-3" style={{ color: cardStyles[index].title }}>
                     {item.title}

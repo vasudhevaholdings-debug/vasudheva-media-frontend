@@ -9,7 +9,7 @@ const InstitutionalIntro = () => {
     <section className="premium-section py-5">
       <Container>
         <Row className="justify-content-center">
-          <Col md={10} lg={9}>
+          <Col >
 
             {/* Section Heading */}
             <h2 className="section-heading text-center mb-4">
@@ -23,7 +23,7 @@ const InstitutionalIntro = () => {
               production, strategic thinking, cultural awareness and knowledge translation into a unified practice.
             </p>
 
-            <p className="lead text-center mx-auto mb-5" style={{ maxWidth: '860px', fontSize: '1.15rem' }}>
+            <p className="lead text-center mx-auto mb-2" style={{ maxWidth: '860px', fontSize: '1.15rem' }}>
               At its core, it operates simultaneously as:
             </p>
 
@@ -31,21 +31,21 @@ const InstitutionalIntro = () => {
 
               {/* Left Side - Original Content */}
               <Col lg={7} md={12}>
-                <Row className="justify-content-center mb-5">
+                <Row className="justify-content-center mb-2">
                   <Col md={10}>
                     <ul 
                       className="list-unstyled" 
                       style={{ 
                         fontSize: '1.1rem', 
                         lineHeight: '1.8',
-                        paddingLeft: '20px'
+                        
                       }}
                     >
-                      <li className="mb-3">• A media company that creates films, formats and communication outputs</li>
-                      <li className="mb-3">• A communication partner that designs narratives and public positioning</li>
-                      <li className="mb-3">• A cultural enterprise that engages with identity, memory and meaning</li>
-                      <li className="mb-3">• A knowledge platform that translates ideas into accessible and powerful media</li>
-                      <li className="mb-3">• And an intellectual property builder that develops long-term media and narrative assets</li>
+                      <li className="mb-3">• A media company that creates films, formats and communication outputs.</li>
+                      <li className="mb-3">• A communication partner that designs narratives and public positioning.</li>
+                      <li className="mb-3">• A cultural enterprise that engages with identity, memory and meaning.</li>
+                      <li className="mb-3">• A knowledge platform that translates ideas into accessible and powerful media.</li>
+                      <li className="mb-3">• And an intellectual property builder that develops long-term media and narrative assets.</li>
                     </ul>
                   </Col>
                 </Row>
@@ -55,7 +55,7 @@ const InstitutionalIntro = () => {
               </Col>
 
               {/* Right Side - Image */}
-              <Col lg={5} md={12}>
+              <Col >
                 <img 
                   src={VasudhevaImage}
                   alt="Vasudheva Media"
@@ -63,7 +63,7 @@ const InstitutionalIntro = () => {
                   style={{ 
                     width: '100%', 
                     height: 'auto',
-                    minHeight: '450px',
+                    minHeight: '500px',
                     objectFit: 'cover',
                     borderRadius: '20px'
                   }}
@@ -71,7 +71,7 @@ const InstitutionalIntro = () => {
               </Col>
 
             </Row>
-            <div className="text-center mb-5 mt-4">
+            <div className="text-center mb-5 ">
                   <p 
                     className="text-muted fw-light text-uppercase mx-auto" 
                     style={{ 
