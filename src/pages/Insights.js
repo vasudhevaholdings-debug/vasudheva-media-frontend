@@ -37,7 +37,7 @@ const Insights = () => {
       </section>
 
       {/* ==================== SECTION 3 — WHAT THIS SECTION IS ==================== */}
-      <section className="premium-section" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             What you will find here
@@ -164,10 +164,10 @@ const Insights = () => {
       </section>
 
       {/* ==================== FINAL CTA ==================== */}
-      <section className="premium-section text-center bg-dark text-light py-5">
+      <section className="premium-section text-center   py-5" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="text-light">If these ideas resonate, let’s work together</h2>
-          <p className="lead mt-3 mb-5" style={{ maxWidth: '680px', margin: '0 auto', color: '#CBD5E1' }}>
+          <p className="lead mt-3 mb-5" style={{ maxWidth: '680px', margin: '0 auto' }}>
             VASUDHEVA Media works with institutions, organisations and individuals who take communication, knowledge and narrative seriously.
           </p>
           <div>

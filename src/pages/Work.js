@@ -39,7 +39,7 @@ const Work = () => {
       </section>
 
       {/* ==================== SECTION 3 — WHAT THIS WORK REPRESENTS ==================== */}
-      <section className="premium-section" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             What this work represents
@@ -197,10 +197,10 @@ const Work = () => {
       </section>
 
       {/* ==================== FINAL CTA ==================== */}
-      <section className="premium-section text-center bg-dark text-light py-5">
+      <section className="premium-section text-center py-5" style={{backgroundColor: '#aad1f7'}}>
         <Container>
           <h2 className="text-light">If this resonates, let’s build something meaningful together</h2>
-          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto', color: '#CBD5E1' }}>
+          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto'}}>
             Whether you are an institution, an organisation, a founder, or an idea in formation — 
             we are interested in work that requires depth, clarity and seriousness.
           </p>

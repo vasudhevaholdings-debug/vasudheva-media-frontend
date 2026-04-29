@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const TrustStrip = () => {
   return (
-    <section className="premium-section py-4 bg-light">
+    <section className="premium-section py-4 "style={{background: 'linear-gradient(135deg, #44493a 0%, #9b5a8c 40%, #60A5FA 70%, #E0F2FE 100%)'}}>
       <Container fluid className="px-4 px-lg-5">
         <Row className="justify-content-center text-center">
           <Col >

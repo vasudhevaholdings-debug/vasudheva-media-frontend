@@ -38,7 +38,7 @@ const WhoWeServe = () => {
       </section>
 
       {/* ==================== SECTION 3 — WHAT THIS PAGE IS ==================== */}
-      <section className="premium-section" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             Understanding relevance
@@ -284,10 +284,10 @@ const WhoWeServe = () => {
       </section>
 
       {/* ==================== FINAL CTA ==================== */}
-      <section className="premium-section text-center bg-dark text-light py-5">
+      <section className="premium-section text-center py-5" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="text-light">If you see your context here, let’s work together</h2>
-          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto', color: '#CBD5E1' }}>
+          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto' }}>
             If your work involves ideas, institutions, people, communication or public engagement — we can help bring clarity, structure and meaning to it.
           </p>
           <div>

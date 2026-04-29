@@ -44,7 +44,7 @@ const WhatWeDo = () => {
       </section>
 
       {/* ==================== SECTION 3 — WHAT WE DO ==================== */}
-      <section className="premium-section" id="capability" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" id="capability" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             What We Do
@@ -199,10 +199,10 @@ const WhatWeDo = () => {
       </section>
 
       {/* ==================== FINAL CTA ==================== */}
-      <section className="premium-section text-center bg-dark text-light py-5">
+      <section className="premium-section text-center   py-5" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="text-light">Let’s design meaningful media and communication systems together.</h2>
-          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto', color: '#CBD5E1' }}>
+          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto' }}>
             If you are building an institution, shaping an idea or seeking structured communication—we would be glad to work with you.
           </p>
           <div>

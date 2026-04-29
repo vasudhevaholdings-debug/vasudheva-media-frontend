@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FinalCTABand = () => {
   return (
-    <section className="premium-section text-center  text-dark py-5">
+    <section className="premium-section text-center  text-dark py-5"style={{background: 'linear-gradient(135deg, #F8FAFC 0%, #e9e984 100%)'}}>
       <Container>
         <Row className="justify-content-center">
           <Col md={10} lg={8}>

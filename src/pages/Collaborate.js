@@ -38,7 +38,7 @@ const Collaborate = () => {
       </section>
 
       {/* ==================== SECTION 3 — COLLABORATION PHILOSOPHY ==================== */}
-      <section className="premium-section" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             How we think about collaboration
@@ -97,7 +97,7 @@ const Collaborate = () => {
       </section>
 
       {/* ==================== SECTION 4 — WHO WE COLLABORATE WITH ==================== */}
-      <section className="premium-section bg-light">
+      <section className="premium-section" style={{ backgroundColor: '#d0d5db' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>Who we collaborate with</h2>
           <p className="lead text-center mx-auto mb-5" style={{ maxWidth: '800px', color: '#334155' }}>
@@ -240,10 +240,10 @@ const Collaborate = () => {
       </section>
 
       {/* ==================== FINAL CTA ==================== */}
-      <section className="premium-section text-center bg-dark text-light py-5">
+      <section className="premium-section text-center py-5" style={{ backgroundColor: '#aad1f7'}}>
         <Container>
           <h2 className="text-light">If you resonate with this, let’s connect</h2>
-          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto', color: '#CBD5E1' }}>
+          <p className="lead mt-3 mb-5" style={{ maxWidth: '700px', margin: '0 auto' }}>
             Whether you are an institution, a researcher, a creator, or someone looking to contribute meaningfully—we are open to thoughtful collaboration.
           </p>
           <div>

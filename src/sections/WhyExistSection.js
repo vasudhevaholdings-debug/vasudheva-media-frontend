@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WhyExistSection = () => {
   return (
-    <section className="premium-section py-5 bg-light">
+    <section className="premium-section py-5 "style={{background: 'linear-gradient(135deg, #F8FAFC 0%, #84b0e9 100%)'}}>
       <Container fluid className="px-4 px-lg-5">
 
         <Row className="justify-content-center">

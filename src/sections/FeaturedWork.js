@@ -38,7 +38,7 @@ const FeaturedWork = () => {
   ];
 
   return (
-    <section className="premium-section py-5">
+    <section className="premium-section py-5"style={{background: 'linear-gradient(135deg, #F8FAFC 0%, #e9e684 100%)'}}>
       <Container fluid className="px-4 px-lg-5">
 
         {/* Section Heading */}

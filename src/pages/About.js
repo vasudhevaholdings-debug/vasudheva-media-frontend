@@ -39,7 +39,7 @@ const About = () => {
       </section>
 
       {/* ==================== SECTION 3 — INSTITUTIONAL DEFINITION ==================== */}
-      <section className="premium-section" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="premium-section" style={{ backgroundColor: '#aad1f7' }}>
         <Container>
           <h2 className="section-heading text-center mb-5" style={{ color: '#0F172A' }}>
             What is VASUDHEVA Media?

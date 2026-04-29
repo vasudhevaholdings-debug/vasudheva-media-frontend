@@ -6,7 +6,7 @@ import VasudhevaImage from '../logos/what_media.png';
 
 const InstitutionalIntro = () => {
   return (
-    <section className="premium-section py-5">
+    <section className="premium-section py-5"style={{background: 'linear-gradient(135deg, #F8FAFC 0%, #84b0e9 100%)'}}>
       <Container>
         <Row className="justify-content-center">
           <Col >
